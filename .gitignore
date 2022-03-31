@@ -12,3 +12,6 @@ build/
 log/
 nohup.out
 .DS_Store
+**/*dataset*
+**/models
+.vscode

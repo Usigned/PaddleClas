@@ -1,6 +1,7 @@
 Global:
   infer_imgs: "./images/wangzai.jpg"
-  det_inference_model_dir: "./models/ppyolov2_r50vd_dcn_mainbody_v1.0_infer"
+  # det_inference_model_dir: "./models/ppyolov2_r50vd_dcn_mainbody_v1.0_infer"
+  det_inference_model_dir: "./models/picodet_PPLCNet_x2_5_mainbody_lite_v1.0_infer"
   batch_size: 1
   image_shape: [3, 640, 640]
   threshold: 0.2
