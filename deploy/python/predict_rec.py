@@ -113,13 +113,13 @@ def main(config):
     batch_names = []
     cnt = 0
     for idx, img_path in enumerate(image_list):
-        img = cv2.imread(img_path)
+        img = cv2.imread(img_path) # image (H, W, C-BGR)
         if img is None:
             logger.warning(
                 "Image file failed to read and has been skipped. The path: {}".
                 format(img_path))
         else:
-            img = img[:, :, ::-1]
+            img = img[:, :, ::-1] # bgr2rgb
             batch_imgs.append(img)
             img_name = os.path.basename(img_path)
             batch_names.append(img_name)
